@@ -1,0 +1,342 @@
+// Colores
+@import "colores";
+
+// General
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+a{
+    text-decoration: none;
+  }
+  
+body{
+    background-color: #FFFCF9;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    color: $gray-dark;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+h2{
+    color: #EF476F;
+    font-weight: 700;
+    font-size: 56px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  
+  h3{
+    color: #06D6A0;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+.button{
+    background-color: #EF476F;
+    border: none;
+    width: 160px;
+    height: 50px;
+    padding: 10px 20px 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    align-self: end;
+    &:hover{
+        background: linear-gradient(45deg, rgba(239,71,111,1) 30%, rgba(255,209,102,1) 100%);
+        transition-delay: 2s;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+// Header
+.header{
+    margin-top: 10px;
+}
+
+.header__logo{
+    background-image: url(../img/logo@2x.png);
+    height: 90px;
+    width: 250px;
+    background-size: contain;
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    ul{
+        list-style: none;
+        
+        ul{
+            position: absolute;
+            display: none;
+        }
+
+        li{
+            display: inline-block;
+            position: relative;
+            &:hover{
+                transform: scale(1.05,1.05);
+                ul{
+                    display: block;
+                    background-color: rgba(0,0,0,0.8);
+                    padding-left: 10px;
+                    transform: scale(1.0,1.0);
+                }
+            }
+            a{
+                color: $pink;
+                text-decoration: none;
+                padding: 10px 20px 10px 0px;
+                font-size: 22px;
+                font-weight: 700;
+                text-transform: uppercase;
+                display: block;
+            }
+        }
+    }
+    .nav-link:hover{
+        color: $pink;
+    }
+}
+
+// Página de Inicio
+
+.hero{
+    margin: 20px auto;
+}
+
+.hero__title{
+    color: #26547C;
+    font-weight: 700;
+    font-size: 112px;
+    line-height: 100px;
+    align-self: center;
+}
+
+.hero__tagline{
+    font-size: 34px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    align-self: center;
+}
+
+.hero__button{
+    height: 60px;
+    line-height: 45px;
+}
+
+.card__sectionTitle{
+    color: #EF476F;
+    font-weight: 700;
+    font-size: 56px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.card__image{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.card__title{
+    color: #06D6A0;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+// Footer
+.footer{
+    background-color: $gray-light;
+    color: $white;
+}
+
+.footer__logo{
+    height: 45px;
+    margin-bottom: 25px;
+}
+
+.footer__column{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    a p:hover{
+        font-weight: 500;
+    }
+}
+
+// Blog & Artículos
+$alto: 400px;
+
+.blog__banner{
+    background: linear-gradient(45deg, rgba(239,71,111,0.5) 0%, rgba(6,214,160,0.5) 100%), url(https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    width: 100%;
+    height: $alto*2;
+    margin-bottom: 50px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog__banner__title{
+    color: $white;
+    font-size: 80px;
+    text-align: center;
+    justify-content: center;
+}
+
+.blog__article__container{
+    padding-right: 100px;
+}
+
+.blog__article{
+    margin-bottom: 75px;
+    p{
+        margin-bottom: 25px;
+    }
+}
+
+.blog__article__img{
+    height: $alto;
+    background-position: center;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.blog__sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blog__banner__date{
+    color: $white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.blog__author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gray-dark;
+    padding: 50px 20px;
+}
+
+.blog__author__img{
+    width: $alto/2;
+    border-radius: 100%;
+}
+
+.blog__author__name{
+    color: $pink;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.blog__author__bio{
+    text-align: center;
+    color: $white;
+}
+
+// Página de servicios
+.service__plans{
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.service__item{
+    background-color: $yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px 0px;
+    p{
+        text-align: center;
+    }
+}
+
+.service__title{
+    color: $white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.service__badge{
+    background-color: $pink;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.service__additional{
+    color: $green;
+}
+
+.service__price{
+    text-align: center;
+    font-size: 30px;
+    color: $white;
+    font-weight: 500;
+    background-color: $green;
+    border-radius: 7px;
+    padding: 10px 15px;
+    width: 75%;
+    align-self: center;
+}
+
+// Responsive - Tablets
+
+@media only screen and (max-width: 768px){
+    .container{
+        width: 80%;
+    }
+
+    .blog__article__container{
+        padding: 0;
+    }
+}
+
+// Responsive - Mobile
+
+@media only screen and (max-width: 480px){
+   .container{
+       width: 90%;
+   }
+   .hero__title{
+       font-size: 60px;
+       line-height: 50px;
+       margin-top: 25px;
+   }
+   .blog__banner__title{
+       font-size: 45px;
+   }
+
+   h2{
+       font-size: 45px;
+   }
+}
