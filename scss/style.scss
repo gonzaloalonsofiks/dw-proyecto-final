@@ -93,6 +93,7 @@ h2{
                     background-color: rgba(0,0,0,0.8);
                     padding-left: 10px;
                     transform: scale(1.0,1.0);
+                    z-index: 10;
                 }
             }
             a{
@@ -158,6 +159,10 @@ h2{
     font-size: 32px;
     line-height: 35px;
     margin-bottom: 25px;
+}
+
+.carousel{
+    z-index: auto;
 }
 
 // Footer
@@ -307,6 +312,73 @@ $alto: 400px;
     padding: 10px 15px;
     width: 75%;
     align-self: center;
+}
+
+// Sitemap
+.sitemap__container{
+    background-color: $yellow;
+    color: $gray-dark;
+    font-size: 1.5em;
+    margin: 25px 0px 75px 0px;
+    padding: 25px;
+    border-radius: 7px;
+    a{
+        color: $gray-dark;
+        &:hover{
+            color: $pink;
+        }
+    }
+}
+
+// 404 page
+.errorpage{
+    background: linear-gradient(45deg, rgba(239,71,111,0.5) 0%, rgba(6,214,160,0.5) 100%), url(https://images.pexels.com/photos/800789/pexels-photo-800789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.errorpage__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 75vh;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.35);
+    margin-top: 100px;
+}
+
+.errorpage__heading{
+    font-size: 7em;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+}
+
+.errorpage__subheading{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+}
+
+.errorpage__text{
+    font-size: 1.5em;
+    color: $white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.errorpage__button{
+    width: 250px;
+    align-self: center;
+    margin-top: 75px;
+    color: $white;
 }
 
 // Responsive - Tablets
