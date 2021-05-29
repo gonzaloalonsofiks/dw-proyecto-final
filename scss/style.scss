@@ -63,10 +63,7 @@ h2{
 }
 
 .header__logo{
-    background-image: url(../img/logo@2x.png);
-    height: 90px;
-    width: 250px;
-    background-size: contain;
+    height: 80px;
 }
 
 .header__menu{
@@ -74,7 +71,6 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-
     ul{
         list-style: none;
         
@@ -86,6 +82,7 @@ h2{
         li{
             display: inline-block;
             position: relative;
+            z-index: 999;
             &:hover{
                 transform: scale(1.05,1.05);
                 ul{
@@ -93,7 +90,6 @@ h2{
                     background-color: rgba(0,0,0,0.8);
                     padding-left: 10px;
                     transform: scale(1.0,1.0);
-                    z-index: 10;
                 }
             }
             a{

@@ -48,10 +48,7 @@ h3 {
   margin-top: 10px; }
 
 .header__logo {
-  background-image: url(../img/logo@2x.png);
-  height: 90px;
-  width: 250px;
-  background-size: contain; }
+  height: 80px; }
 
 .header__menu {
   display: flex;
@@ -65,15 +62,15 @@ h3 {
       display: none; }
     .header__menu ul li {
       display: inline-block;
-      position: relative; }
+      position: relative;
+      z-index: 999; }
       .header__menu ul li:hover {
         transform: scale(1.05, 1.05); }
         .header__menu ul li:hover ul {
           display: block;
           background-color: rgba(0, 0, 0, 0.8);
           padding-left: 10px;
-          transform: scale(1, 1);
-          z-index: 10; }
+          transform: scale(1, 1); }
       .header__menu ul li a {
         color: #ef476f;
         text-decoration: none;
